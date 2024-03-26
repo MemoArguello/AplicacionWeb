@@ -35,7 +35,7 @@
 								<div class="col-12 col-md-4">
 									<div class="form-group">
 										<label for="usuario_dni" class="bmd-label-floating">Cedula</label>
-										<input type="text" pattern="[0-9-]{1,20}" class="form-control" name="usuario_dni_reg" id="usuario_dni" maxlength="20">
+										<input type="text" pattern="[0-9\-]{1,20}" class="form-control" name="usuario_dni_reg" id="usuario_dni" maxlength="20">
 									</div>
 								</div>
 								
@@ -54,13 +54,13 @@
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="usuario_telefono" class="bmd-label-floating">Teléfono</label>
-										<input type="text" pattern="[a-zA-Z0-9$@.\-]{7,100}" class="form-control" name="usuario_telefono_reg" id="usuario_telefono" maxlength="20">
+										<input type="text" pattern="[0-9\(\)+]{8,20}" class="form-control" name="usuario_telefono_reg" id="usuario_telefono" maxlength="20">
 									</div>
 								</div>
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="usuario_direccion" class="bmd-label-floating">Dirección</label>
-										<input type="text" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,190}" class="form-control" name="usuario_direccion_reg" id="usuario_direccion" maxlength="190">
+										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,35}" class="form-control" name="usuario_direccion_reg" id="usuario_direccion" maxlength="190">
 									</div>
 								</div>
 							</div>
@@ -74,7 +74,7 @@
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="usuario_usuario" class="bmd-label-floating">Nombre de usuario</label>
-										<input type="text" pattern="[a-zA-Z0-9$@.\-]{7,100}" class="form-control" name="usuario_usuario_reg" id="usuario_usuario" maxlength="35">
+										<input type="text" pattern="[a-zA-Z0-9]{1,35}" class="form-control" name="usuario_usuario_reg" id="usuario_usuario" maxlength="35">
 									</div>
 								</div>
 								<div class="col-12 col-md-6">
