@@ -64,14 +64,14 @@ function alertas_ajax(alerta){
             icon: 'error',
             title: alerta.Titulo,
             text: alerta.Texto,
-            type: alerta.Tipo,
+            icon: alerta.icon,
             confirmButtonText: "Aceptar"
           });
     }else if(alerta.Alerta==="recargar"){
         Swal.fire({
             title: alerta.Titulo,
             text: alerta.Texto,
-            type: alerta.Tipo,
+            icon: alerta.icon,
             confirmButtonText: "Aceptar"
           }).then((result) => {
             if (result.value) {
@@ -82,7 +82,7 @@ function alertas_ajax(alerta){
         Swal.fire({
             title: alerta.Titulo,
             text: alerta.Texto,
-            type: alerta.Tipo,
+            icon: alerta.icon,
             confirmButtonText: "Aceptar"
           }).then((result) => {
             if (result.value) {
