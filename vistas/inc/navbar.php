@@ -16,6 +16,9 @@
                     </div>
                     <!-- profile info & task notification -->
                     <div class="col-md-6 col-sm-4 clearfix">
+                    <div class="notification-area pull-left">
+                        <p>¡Bienvenido de vuelta! <?php echo " ". $_SESSION['nombre_spm'] ." ". $_SESSION['apellido_spm'];?></p>
+                     </div>
                         <ul class="notification-area pull-right">
                             <li id="full-view"><i class="ti-fullscreen"></i></li>
                             <li id="full-view-exit"><i class="ti-zoom-out"></i></li>

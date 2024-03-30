@@ -25,5 +25,5 @@
     <script src="<?php echo SERVERURL; ?>vistas/assets/js/scripts.js"></script>
     <script src="<?php echo SERVERURL; ?>vistas/assets/js/alertas.js"></script>
     <script src="<?php echo SERVERURL; ?>vistas/assets/js/line-chart.js"></script>
-    <script src="<?php echo SERVERURL;?>vistas/assets/js/sweetalert.all.min.js"></script>
     <script src="<?php echo SERVERURL; ?>vistas/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?php echo SERVERURL;?>vistas/assets/js/sweetalert.all.min.js"></script>
