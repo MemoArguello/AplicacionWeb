@@ -25,7 +25,7 @@
             
             /** comprobar campos vacios*/
             if($dni=="" || $nombre=="" || $apellido=="" || 
-            $usuario=="" || $clave1=="" || $clave2==""){
+            $usuario=="" || $clave1=="" || $clave2=="" || $direccion==""){
                 $alerta=[
                     "Alerta"=>"simple",
                     "Titulo"=>"Ocurrio un error inesperado",
@@ -82,7 +82,7 @@
                 $alerta=[
                     "Alerta"=>"simple",
                     "Titulo"=>"Ocurrio un error inesperado",
-                    "Texto"=>"El usuario no es valido",
+                    "Texto"=>"La direccion no es valida",
                     "icon"=>"error"
                 ];
                 echo json_encode($alerta);
