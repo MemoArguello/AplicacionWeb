@@ -1,21 +1,31 @@
+<?php
+    if(isset($_POST['usuario_log']) && isset($_POST['clave_log'])){
+            require_once "./controladores/loginControlador.php";
+            $ins_login=new loginControlador();
+
+            echo $ins_login->iniciar_sesion_controlador();
+        }
+?>
 <div class="login-area">
         <div class="container">
             <div class="login-box ptb--100">
-                <form>
+                <form action="" method="POST" autocomplete="off">
                     <div class="login-form-head">
                         <h4>Iniciar Sesión</h4>
                         <!--<p>Bienvenido al Sistema</p> -->
                     </div>
                     <div class="login-form-body">
                         <div class="form-gp">
-                            <label for="exampleInputEmail1">Correo Electronico</label>
-                            <input type="email" id="exampleInputEmail1">
+                            <label for="UserName">Usuario</label>
+                            <input type="text" id="UserName" name="usuario_log"
+                            pattern="[a-zA-Z0-9]{1,35}" maxlength="35" required>
                             <i class="ti-email"></i>
                             <div class="text-danger"></div>
                         </div>
                         <div class="form-gp">
-                            <label for="exampleInputPassword1">Contraseña</label>
-                            <input type="password" id="exampleInputPassword1">
+                            <label for="UserPassword">Contraseña</label>
+                            <input type="password" id="UserPassword"  name="clave_log"
+                            pattern="[a-zA-Z0-9$@.\-]{7,100}" maxlength="35" required>
                             <i class="ti-lock"></i>
                             <div class="text-danger"></div>
                         </div>
@@ -49,3 +59,4 @@
             </div>
         </div>
     </div>
+
